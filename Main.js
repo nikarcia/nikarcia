@@ -22,11 +22,11 @@ const ProductGallery = () => {
   const [modalVisibleCarGeneral, setModalVisibleCarGeneral] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [cartItems, setCartItems] = useState([])
-  const [checkboxes, setCheckboxes] = useState([true, true, true, true, false, false, false,false]);
+  const [checkboxes, setCheckboxes] = useState([true, true, true, true, false, false, false, false]);
   const [selectedValue, setSelectedValue] = useState('Precio/Medida');
   const [selectedOption, setSelectedOption] = useState('productos');
-  const markets = ['exito', 'olimpica','d1', 'jumbo', 'colsubsidio', 'carulla', 'metro', 'pasteur']
-const cantidadResultados=30
+  const markets = ['exito', 'olimpica', 'd1', 'jumbo', 'colsubsidio', 'carulla', 'metro', 'pasteur']
+  const cantidadResultados = 30
   const handleOptionPress = (option) => {
     setSelectedOption(option === selectedOption ? null : option);
   };
@@ -81,11 +81,6 @@ const cantidadResultados=30
     setModalVisibleCar(false);
     setModalVisible(false);
   }
-
-
-
-
-
 
   const handleClick = (order) => {
 
@@ -244,7 +239,7 @@ const cantidadResultados=30
               price_per_unit: (productsapi[i].priceRange.sellingPrice.lowPrice / quantity).toFixed(2)
             }
           }
-          
+
           else if (market == 'pasteur') {
             var quantity = '0'
             var unitMedida = 'gr'
@@ -355,7 +350,7 @@ const cantidadResultados=30
             id: productsapi[i].ean[0] + '-' + market,
             name: productsapi[i].name.toLowerCase(),
             brand: productsapi[i].brand.toUpperCase(),
-            link: url_base +'/p/' + productsapi[i].slug ,
+            link: url_base + '/p/' + productsapi[i].slug,
             image: productsapi[i].photosUrls[0],
             ean: productsapi[i].ean[0].toLowerCase(),
             market: market.toLowerCase(),
@@ -576,7 +571,7 @@ const cantidadResultados=30
 
 
 
-    
+
     const arrayData = Array.from(hashMap.entries());
     if (order == 'Relevancia') {
       for (var i = 0; i < arrayData.length; i++) {
@@ -606,7 +601,7 @@ const cantidadResultados=30
       arrayData.sort((a, b) => a[1][0].price_per_unit - b[1][0].price_per_unit);
       lista_productos.sort((a, b) => a.price_per_unit - b.price_per_unit);
 
-      
+
     }
 
     setProducts(arrayData)
@@ -880,9 +875,11 @@ const cantidadResultados=30
       </View>
 
       <OrdenarPor selectedValue={selectedValue} handleValueChange={handleValueChange} />
-      <Text style={{marginHorizontal:5,fontSize: 10,marginVertical:2,
-    fontWeight: 'bold',}}>Los precios y disponibilidad de los productos pueden variar de acuerdo a la tienda y ubicacion, puedes consultar el precio en la pagina oficial de cada tienda dando click sobre el producto que desees</Text>
-      
+      <Text style={{
+        marginHorizontal: 5, fontSize: 10, marginVertical: 2,
+        fontWeight: 'bold',
+      }}>Los precios y disponibilidad de los productos pueden variar de acuerdo a la tienda y ubicacion, puedes consultar el precio en la pagina oficial de cada tienda dando click sobre el producto que desees</Text>
+
       <BotonTiendasProductos selectedOption={selectedOption} handleOptionPress={handleOptionPress}></BotonTiendasProductos>
 
       {selectedOption === 'tiendas' && (
