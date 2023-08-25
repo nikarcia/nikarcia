@@ -107,13 +107,13 @@ const cantidadResultados=30
     var cadenaJson = JSON.stringify(objetoJson);
     var base64json = base64.encode(cadenaJson);
 
-    const urlBackolimpica = 'https://www.olimpica.com/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSuggestions&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"768ce03567c367d005bed78147463b4e55f50634420f10f9c9a069ca04a9b012","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
-    const urlBackexito = 'https://www.exito.com/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSuggestions&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"768ce03567c367d005bed78147463b4e55f50634420f10f9c9a069ca04a9b012","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
-    const urlBackcarulla = 'https://www.carulla.com/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSuggestions&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"768ce03567c367d005bed78147463b4e55f50634420f10f9c9a069ca04a9b012","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
-    const urlBackemetro = 'https://www.tiendasmetro.co/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSuggestions&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"768ce03567c367d005bed78147463b4e55f50634420f10f9c9a069ca04a9b012","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
-    const urlBackjumbo = 'https://www.tiendasjumbo.co/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSuggestions&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"768ce03567c367d005bed78147463b4e55f50634420f10f9c9a069ca04a9b012","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
-    const urlBackcolsubsidio = 'https://www.mercadocolsubsidio.com/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSuggestions&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"768ce03567c367d005bed78147463b4e55f50634420f10f9c9a069ca04a9b012","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
-    const urlBackcopasteur = 'https://www.farmaciaspasteur.com.co/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSuggestions&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"768ce03567c367d005bed78147463b4e55f50634420f10f9c9a069ca04a9b012","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
+    const urlBackolimpica = 'https://www.olimpica.com/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSearchV3&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"97f345cd1295d67e2e7c6e46f67b7d4e4593b2f97c26b22b9e6b68f787eb12ac","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
+    const urlBackexito = 'https://www.exito.com/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSearchV3&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"97f345cd1295d67e2e7c6e46f67b7d4e4593b2f97c26b22b9e6b68f787eb12ac","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
+    const urlBackcarulla = 'https://www.carulla.com/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSearchV3&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"97f345cd1295d67e2e7c6e46f67b7d4e4593b2f97c26b22b9e6b68f787eb12ac","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
+    const urlBackemetro = 'https://www.tiendasmetro.co/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSearchV3&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"97f345cd1295d67e2e7c6e46f67b7d4e4593b2f97c26b22b9e6b68f787eb12ac","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
+    const urlBackjumbo = 'https://www.tiendasjumbo.co/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSearchV3&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"97f345cd1295d67e2e7c6e46f67b7d4e4593b2f97c26b22b9e6b68f787eb12ac","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
+    const urlBackcolsubsidio = 'https://www.mercadocolsubsidio.com/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSearchV3&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"97f345cd1295d67e2e7c6e46f67b7d4e4593b2f97c26b22b9e6b68f787eb12ac","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
+    const urlBackcopasteur = 'https://www.farmaciaspasteur.com.co/_v/segment/graphql/v1?workspace=master&maxAge=medium&appsEtag=remove&domain=store&locale=es-CO&operationName=productSearchV3&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"97f345cd1295d67e2e7c6e46f67b7d4e4593b2f97c26b22b9e6b68f787eb12ac","sender":"vtex.store-resources@0.x","provider":"vtex.search-graphql@0.x"},"variables":"' + base64json + '"}'
     const urlBackde1 = 'https://deadpool.instaleap.io/api/v2'
 
     for (var i = 0; i < markets.length; i++) {
@@ -158,7 +158,7 @@ const cantidadResultados=30
     })
       .then(response => response.json())
       .then(data => {
-        const productsapi = data.data.productSuggestions.products
+        const productsapi = data.data.productSearch.products
         const lista_productos = []
         for (var i = 0; i < productsapi.length; i++) {
           if (market == 'colsubsidio') {
@@ -380,7 +380,6 @@ const cantidadResultados=30
               }
             }
           }
-          console.log(productApiObject)
         }
         orderResults(lista_productos_por_mercado, lista_productos, market, hashMap, order)
       }
@@ -400,7 +399,7 @@ const cantidadResultados=30
     })
       .then(response => response.json())
       .then(data => {
-        const productsapi = data.data.productSuggestions.products
+        const productsapi = data.data.productSearch.products
         const lista_productos = []
         for (var i = 0; i < productsapi.length; i++) {
 
@@ -463,7 +462,7 @@ const cantidadResultados=30
     })
       .then(response => response.json())
       .then(data => {
-        const productsapi = data.data.productSuggestions.products
+        const productsapi = data.data.productSearch.products
         const lista_productos = []
         for (var i = 0; i < productsapi.length; i++) {
 
@@ -525,7 +524,7 @@ const cantidadResultados=30
     })
       .then(response => response.json())
       .then(data => {
-        const productsapi = data.data.productSuggestions.products
+        const productsapi = data.data.productSearch.products
         const lista_productos = []
         for (var i = 0; i < productsapi.length; i++) {
 
