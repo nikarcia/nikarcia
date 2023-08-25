@@ -1,15 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
+import Toast from 'react-native-toast-message';
+import Main from './Main.js';
+import Main2 from './Main2.js';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar barStyle="dark-content" backgroundColor="black" />
+      {/* <Main2/> */}
+      <Main/>
+      <Toast />
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

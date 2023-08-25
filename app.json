@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ahorrar",
-    "slug": "ahorrar",
+    "slug": "ahorrap",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.nikarcia.ahorrar"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "265a3e0e-1fdc-479c-979c-e82cd821f819"
+      }
+    },
+    "owner": "nikarcia"
   }
 }
